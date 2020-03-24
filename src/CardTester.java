@@ -15,7 +15,7 @@ public class CardTester {
 		Card card3 = new Card("3", "spades", 3);
 
 		System.out.println(card1.suit());
-		System.out.println(card1.rank());
+		System.out.println(card1.rank()); 
 		System.out.println(card1.pointValue());
 		System.out.println(card1.matches(card2));
 		System.out.println(card1.toString());

@@ -63,7 +63,7 @@ public class Card {
 	 */
 	public int pointValue() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-		return pointValue;
+		return pointValue; 
 	}
 
 	/** Compare this card with the argument.
