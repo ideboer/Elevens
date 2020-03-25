@@ -35,5 +35,7 @@ public class DeckTester {
 		System.out.println(deck3.size());
 		System.out.println(deck3.deal());
 		System.out.println(deck3.toString());
+
+		
 	}
 }
