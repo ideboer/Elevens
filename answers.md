@@ -1,0 +1,5 @@
+1) size does not need to be an abstract method because it simply returns the length of the variable cards. However, cards is initialized in the constructor of Board using the size that is passed to the Board. This size is passed by ElevensBoards, and could be passed by ThirteensBoard were there such a file. Since the size is determined in this manner, it can differ based on which game is being played. size does not have to be an abstract method.
+
+2) The selection of cards to be removed or replaced is the same for any game - either you can do it or you cant't. So this does not need to be an abstract method. It can just be a method that recieves a list of cards to replace, which it the replaces. This does not change by the game.
+
+3) This would allow the Elevens GUI to call isLegal and anotherPlayisPossible polymorphically. It would not work as well as the abstract Board class design because you would have to implement all the methods in ElevensBoard instead of just isLegal and anotherPlayisPossible.
