@@ -1,0 +1,7 @@
+1) In all of the games, pairs of cards that add up to a certain number are removed. Elevens uses a 9-card board. Thirteens uses a 10-card board. Tens uses a 13-card board. In Thirteens, jacks and queens have values and can be used to reach the sum of 13. In all of the games, kings cannot be used to rech the sum. In thirteens, kings are removed singly. In Tens, quartets of kings, queens, jacks, and tens of the same rank are removed. In Elevens, triples of one king, one queen, and one jack are removed. All the games are won if all cards have been removed.
+
+2) ElevensBoard declares and initializes BOARD_SIZE, RANKS, SUITS, and POINT_VALUES. In its constructor it uses 
+    super(BOARD_SIZE, RANKS, SUITS, POINT_VALUES);
+to pass these variables to Board, where they are used to initialize Board instance variables cards and deck.
+
+3) The abstract methods in Board.java are isLegal and anotherPlayIsPossible. These don't cover the different board sizes, but that is taken card of as discussed in question 2. Other than that, they cover all the differences between Elevens, Thirteens,and Tens. One other thing I did notice is that ElevensBoard has the method containsPairSum11. The classes of Tens and Thirteens would each need something similar,and there is not an abstract class for this in Board.
